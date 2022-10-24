@@ -1,3 +1,6 @@
+import { LoginUserModule } from './login-user/login-user.module';
+import { RegisterUserModule } from './register-user/register-user.module';
+import { ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -10,7 +13,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    RegisterUserModule,
+    LoginUserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

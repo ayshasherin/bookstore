@@ -1,3 +1,4 @@
+import { HomeComponent } from './user-home/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login-user/login/login.component';
@@ -9,6 +10,9 @@ const routes: Routes = [
   },
   {
     path:'register' , component: RegisterComponent
+  },
+  {
+    path:'home' , component: HomeComponent
   }
 ];
 
